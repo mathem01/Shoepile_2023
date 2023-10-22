@@ -21,8 +21,8 @@ body {
     font-family: "Montserrat", sans-serif;
 
     header {
-        /*@include SideWidth(left, 50%);*/
-        @extend .float-l-50;
+        /*@include SideWidth(left, 50%);
+        @extend .float-l-50;*/
         padding: 1rem;
 
         nav {
@@ -60,8 +60,8 @@ body {
         }
     }
     main {
-        /*@include SideWidth(left, 50%);*/
-        @extend .float-l-50;
+        /*@include SideWidth(left, 50%);
+        @extend .float-l-50;*/
         padding: 1rem;
     }
     figure {

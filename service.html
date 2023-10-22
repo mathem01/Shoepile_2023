@@ -4,30 +4,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/temp.css" type="text/css">
     <title>Kundeservice</title>
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <span id="logo">Logo</span>
-        <a href="#" id="contact">Kontakt oss</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">Hjem</a></li>
-                <li><a href="produkt.html">Produkter</a></li>
-                <li><a href="#">Kundeservice</a></li>
+    <div id="grid-container">
+        <header>
+            <nav>
+                <ul class="top-menu">
+                    <li>
+                        <i id="ham" class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li><a href="#" id="logo">SHOEPILE</a></li>
+                    <li>
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </li>
+                </ul>
+                <ul class="navbar">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="produkt.html">Produkter</a></li>
+                    <li><a href="#">Kundeservice</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p id="path"><a href="index.html">Hjem</a> / <strong>Kundeservice</strong></p>
+            <section class="flex-section">
+                <h1>Kundeservice</h1>
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                    mollit anim id est laborum.</p>
+
+                <section class="btn-section">
+                    <a href="#" class="white-btn">Klikk & hent</a>
+                    <a href="#" class="white-btn">Bytte og retur</a>
+                    <a href="#" class="white-btn">Reklamasjon</a>
+                    <a href="#" class="white-btn">Betaling</a>
+                    <a href="#" class="white-btn">Støtte</a>
+                    <a href="#" class="white-btn">Spør oss</a>
+                </section>
+            </section>
+
+            
+        </main>
+        <footer>
+            <section>
+                <h2>Om oss</h2>
+                <ul>
+                    <li><a href="#">Kundeservice</a></li>
+                    <li><a href="#">Kjøpsvilkår</a></li>
+                    <li><a href="#">Ledige stillinger</a></li>
+                </ul>
+            </section>
+            <section>
+                <h2>Kontakt oss</h2>
+                <ul>
+                    <li><a href="#">shoepile@gmail.com</a></li>
+                    <li><a href="#">+47 123 45 678</a></li>
+                </ul>
+            </section>
+            <div class="break"></div>
+            <ul class="socials">
+                <li><a href="#"><img src="img/Help.png" alt="Help icon"></a></li>
+                <li>
+                    <a href="#"><img src="img/Facebook.png" alt="Facebook icon"></a>
+                    <a href="#"><img src="img/Instagram.png" alt="Instagram icon"></a>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-arrow-up-long"></i></a></li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <h1>Dette er en overskrift</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-    </main>
-
-    <footer>Nettside laget av Mathias Hem 2023</footer>
+        </footer>
+    </div>
 </body>
 
 </html>
