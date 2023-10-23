@@ -163,6 +163,9 @@ main {
             left: 50%;
             transform: translate(-50%, -50%);
             font-size: 1.5rem;
+            background-color: $black;
+            color: #ffffff;
+            z-index: 2;
         }
 
         img {
@@ -287,10 +290,24 @@ main {
 
         .slider-dots {
             padding: 1rem 0;
+
+            i {
+                color: #91919B;
+            }
+
+            .current-dot {
+                color: $black;
+            }
         }
 
         .slider-items {
+            display: flex;
+            flex-direction: column;
             padding: 1rem 0;
+
+            li {
+                flex-basis: 33%;
+            }
         }
 
         .slider-img {
@@ -410,12 +427,18 @@ footer {
     }
 }
 
+@media only screen and (min-width: 425px) {
+    main {
+        .slider-section {
+            .slider-items {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
 $grid-column-size: 0.2fr 1fr 0.2fr;
 @media only screen and (min-width: 1024px) {
-    #grid-container {
-        grid-template-columns: $grid-column-size;
-    }
-
     header {
         display: grid;
         grid-template-columns: $grid-column-size;
@@ -463,6 +486,10 @@ $grid-column-size: 0.2fr 1fr 0.2fr;
         }
     }
 
+    #grid-container {
+        grid-template-columns: $grid-column-size;
+    }
+
     main {
         grid-column: 2/3;
         grid-row: 2/3;
@@ -480,7 +507,7 @@ $grid-column-size: 0.2fr 1fr 0.2fr;
             img {
                 grid-column: 1/2;
                 width: 100%;
-                max-width: 200px;
+                max-width: 400px;
                 padding-bottom: 0;
             }
 
@@ -500,6 +527,8 @@ $grid-column-size: 0.2fr 1fr 0.2fr;
         .grid-container {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            max-width: 1024px;
+            margin: 0 auto;
 
             .slider-section {
                 grid-column: 1/2;
@@ -508,6 +537,10 @@ $grid-column-size: 0.2fr 1fr 0.2fr;
                     display: flex;
                     flex-wrap: nowrap;
                     flex-direction: row;
+
+                    li {
+                        flex-basis: 33%;
+                    }
 
                     .current-img {
                         border-bottom: 2px solid $black;
@@ -535,6 +568,7 @@ $grid-column-size: 0.2fr 1fr 0.2fr;
 
             .slider-items {
                 border-bottom: 2px solid $black;
+                flex-direction: row;
             }
 
             .slider-dots {
