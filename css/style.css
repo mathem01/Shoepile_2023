@@ -390,7 +390,7 @@ footer .socials li i {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  main .flex-section {
+  main .gridify {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -398,17 +398,17 @@ footer .socials li i {
     justify-items: center;
     gap: 0;
   }
-  main .flex-section img {
+  main .gridify img {
     grid-column: 1/2;
     width: 100%;
     max-width: 200px;
     padding-bottom: 0;
   }
-  main .flex-section section {
+  main .gridify section {
     grid-column: 2/3;
     position: relative;
   }
-  main .flex-section .white-btn {
+  main .gridify .white-btn {
     position: absolute;
     bottom: 0;
     transform: translate(-50%, -50%);
@@ -448,6 +448,39 @@ footer .socials li i {
   }
   main .slider-section .slider-dots {
     padding: 1rem 0;
+  }
+  main .slider-section .slider-dots i {
+    font-size: 1rem;
+  }
+  .white-btn {
+    display: block;
+    padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    min-width: 150px;
+    max-width: 255px;
+    text-decoration: none;
+    border: 1px solid #242437;
+    color: #242437;
+    border-radius: 5px;
+    font-weight: 400;
+    background-color: #ffffff;
+  }
+  .btn-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem 1rem;
+    border-radius: 5px;
+    background-color: #58A4B0;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    max-width: 600px;
+  }
+  .btn-section .white-btn {
+    max-width: 150px;
   }
   footer {
     display: grid;
