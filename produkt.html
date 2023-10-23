@@ -7,7 +7,7 @@
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/temp.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Produkt</title>
 </head>
 
@@ -17,34 +17,59 @@
             <nav>
                 <ul class="top-menu">
                     <li>
-                        <i id="ham" class="fa-solid fa-bars"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#"><i id="ham" class="fa-solid fa-bars"></i></a>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
-                    <li><a href="#" id="logo">SHOEPILE</a></li>
+                    <li><a href="#" class="logo">SHOEPILE</a></li>
                     <li>
-                        <i class="fa-solid fa-user"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                 </ul>
+                <ul class="top-menu-desktop">
+                    <li><a href="#" class="logo">SHOEPILE</a></li>
+                    <li id="search-bar">
+                        <input id="search-area" type="text" placeholder="Søk etter produkt">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user"></i>
+                            <p>Klubb</p>
+                        </a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i>
+                            <p>Kurv</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="lower-menu">
                 <ul class="navbar">
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#">Produkter</a></li>
-                    <li><a href="service.html">Kundeservice</a></li>
+                    <li><a href="#">Dame</a></li>
+                    <li><a href="#">Herre</a></li>
+                    <li><a href="#">Barn</a></li>
+                    <li><a href="#">Merker</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <p id="path"><a href="index.html">Hjem</a> / <a href="#">Herre</a> / <a href="#">Joggesko</a> / <strong>Nike Sko</strong></p>
-            <section class="slider-section">
-                <img class="main-img" src="https://placehold.co/600x500" alt="Product image">
-                <ul class="slider-dots">
-                    <li><a><img src="https://placehold.co/10x10" alt="Product image"></a></li>
-                    <li><a><img src="https://placehold.co/10x10" alt="Product image"></a></li>
-                    <li><a><img src="https://placehold.co/10x10" alt="Product image"></a></li>
-                </ul>
-            </section>
-            <section class="product-info">
-                <!--<section>-->
+            <p id="path"><a href="index.html">Hjem</a> / <a href="#">Herre</a> / <a href="#">Joggesko</a> / <strong>Nike
+                    Sko</strong></p>
+            <div class="grid-container border-bottom">
+                <section class="slider-section">
+                    <img class="main-img" src="https://placehold.co/600x500" alt="Product image">
+                    <ul class="slider-dots">
+                        <li><a><img src="https://placehold.co/10x10" alt="Product image"></a></li>
+                        <li><a><img src="https://placehold.co/10x10" alt="Product image"></a></li>
+                        <li><a><img src="https://placehold.co/10x10" alt="Product image"></a></li>
+                    </ul>
+                    <ul class="slider-img">
+                        <li class="current-img"><a><img src="https://placehold.co/150x130" alt="Product image"></a></li>
+                        <li><a><img src="https://placehold.co/150x130" alt="Product image"></a></li>
+                        <li><a><img src="https://placehold.co/150x130" alt="Product image"></a></li>
+                    </ul>
+                </section>
+                <section class="product-info">
+                    <!--<section>-->
                     <h1 class="text-left">Nike Sko</h1>
                     <strong class="text-left">899,-</strong>
                     <p>Ut enim ad minim veniam, quis nostrud excertitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -52,10 +77,11 @@
                     <a href="#" class="white-btn">+ Legg til i handlekurv</a>
                     <section class="product-details">
                         <h2>Produktdetaljer</h2>
-                        <a><i class="fa-solid fa-angle-right"></i></a>
+                        <a href="#"><i class="fa-solid fa-angle-right"></i></a>
                     </section>
-                <!--</section>-->
-            </section>
+                    <!--</section>-->
+                </section>
+            </div>
 
             <section class="slider-section">
                 <h2>Lorem Ipsum</h2>
@@ -72,30 +98,32 @@
             </section>
         </main>
         <footer>
-            <section>
-                <h2>Om oss</h2>
-                <ul>
-                    <li><a href="#">Kundeservice</a></li>
-                    <li><a href="#">Kjøpsvilkår</a></li>
-                    <li><a href="#">Ledige stillinger</a></li>
+            <div class="flex-section2">
+                <section>
+                    <h2>Om oss</h2>
+                    <ul>
+                        <li><a href="service.html">Kundeservice</a></li>
+                        <li><a href="#">Kjøpsvilkår</a></li>
+                        <li><a href="#">Ledige stillinger</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Kontakt oss</h2>
+                    <ul>
+                        <li><a href="#">shoepile@gmail.com</a></li>
+                        <li><a href="#">+47 123 45 678</a></li>
+                    </ul>
+                </section>
+                <div class="break"></div>
+                <ul class="socials">
+                    <li><a href="#"><img src="img/Help.png" alt="Help icon"></a></li>
+                    <li>
+                        <a href="#"><img src="img/Facebook.png" alt="Facebook icon"></a>
+                        <a href="#"><img src="img/Instagram.png" alt="Instagram icon"></a>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-arrow-up-long"></i></a></li>
                 </ul>
-            </section>
-            <section>
-                <h2>Kontakt oss</h2>
-                <ul>
-                    <li><a href="#">shoepile@gmail.com</a></li>
-                    <li><a href="#">+47 123 45 678</a></li>
-                </ul>
-            </section>
-            <div class="break"></div>
-            <ul class="socials">
-                <li><a href="#"><img src="img/Help.png" alt="Help icon"></a></li>
-                <li>
-                    <a href="#"><img src="img/Facebook.png" alt="Facebook icon"></a>
-                    <a href="#"><img src="img/Instagram.png" alt="Instagram icon"></a>
-                </li>
-                <li><a href="#"><i class="fa-solid fa-arrow-up-long"></i></a></li>
-            </ul>
+            </div>
         </footer>
     </div>
 </body>

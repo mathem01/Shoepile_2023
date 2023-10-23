@@ -188,6 +188,21 @@ main .slider-section .main-img {
 main .slider-section .slider-items {
   padding: 1rem 0;
 }
+main .white-btn {
+  display: block;
+  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  min-width: 150px;
+  max-width: 255px;
+  text-decoration: none;
+  border: 1px solid #242437;
+  color: #242437;
+  border-radius: 5px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
 main .btn-section {
   display: flex;
   flex-direction: row;
@@ -200,21 +215,8 @@ main .btn-section {
   margin-bottom: 3rem;
   max-width: 600px;
 }
-
-.white-btn {
-  display: block;
-  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
-  margin: auto;
-  text-align: center;
-  width: 50%;
-  min-width: 150px;
+main .btn-section .white-btn {
   max-width: 150px;
-  text-decoration: none;
-  border: 1px solid #242437;
-  color: #242437;
-  border-radius: 5px;
-  font-weight: 400;
-  background-color: #ffffff;
 }
 
 footer {

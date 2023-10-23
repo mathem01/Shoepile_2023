@@ -7,7 +7,7 @@
     <link href="css/font/css/fontawesome.css" rel="stylesheet">
     <link href="css/font/css/brands.css" rel="stylesheet">
     <link href="css/font/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/temp.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Kundeservice</title>
 </head>
 
@@ -17,19 +17,33 @@
             <nav>
                 <ul class="top-menu">
                     <li>
-                        <i id="ham" class="fa-solid fa-bars"></i>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <a href="#"><i id="ham" class="fa-solid fa-bars"></i></a>
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
                     </li>
-                    <li><a href="#" id="logo">SHOEPILE</a></li>
+                    <li><a href="#" class="logo">SHOEPILE</a></li>
                     <li>
-                        <i class="fa-solid fa-user"></i>
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
                     </li>
                 </ul>
+                <ul class="top-menu-desktop">
+                    <li><a href="#" class="logo">SHOEPILE</a></li>
+                    <li id="search-bar">
+                        <input id="search-area" type="text" placeholder="Søk etter produkt">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user"></i><p>Klubb</p></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i><p>Kurv</p></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="lower-menu">
                 <ul class="navbar">
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="produkt.html">Produkter</a></li>
-                    <li><a href="#">Kundeservice</a></li>
+                    <li><a href="#">Dame</a></li>
+                    <li><a href="#">Herre</a></li>
+                    <li><a href="#">Barn</a></li>
+                    <li><a href="#">Merker</a></li>
                 </ul>
             </nav>
         </header>
@@ -42,43 +56,45 @@
                     nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                     mollit anim id est laborum.</p>
 
-                <section class="btn-section">
+                <nav class="btn-section">
                     <a href="#" class="white-btn">Klikk & hent</a>
                     <a href="#" class="white-btn">Bytte og retur</a>
                     <a href="#" class="white-btn">Reklamasjon</a>
                     <a href="#" class="white-btn">Betaling</a>
                     <a href="#" class="white-btn">Støtte</a>
                     <a href="#" class="white-btn">Spør oss</a>
-                </section>
+                </nav>
             </section>
 
             
         </main>
         <footer>
-            <section>
-                <h2>Om oss</h2>
-                <ul>
-                    <li><a href="#">Kundeservice</a></li>
-                    <li><a href="#">Kjøpsvilkår</a></li>
-                    <li><a href="#">Ledige stillinger</a></li>
+            <div class="flex-section2">
+                <section>
+                    <h2>Om oss</h2>
+                    <ul>
+                        <li><a href="#">Kundeservice</a></li>
+                        <li><a href="#">Kjøpsvilkår</a></li>
+                        <li><a href="#">Ledige stillinger</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Kontakt oss</h2>
+                    <ul>
+                        <li><a href="#">shoepile@gmail.com</a></li>
+                        <li><a href="#">+47 123 45 678</a></li>
+                    </ul>
+                </section>
+                <div class="break"></div>
+                <ul class="socials">
+                    <li><a href="#"><img src="img/Help.png" alt="Help icon"></a></li>
+                    <li>
+                        <a href="#"><img src="img/Facebook.png" alt="Facebook icon"></a>
+                        <a href="#"><img src="img/Instagram.png" alt="Instagram icon"></a>
+                    </li>
+                    <li><a href="#"><i class="fa-solid fa-arrow-up-long"></i></a></li>
                 </ul>
-            </section>
-            <section>
-                <h2>Kontakt oss</h2>
-                <ul>
-                    <li><a href="#">shoepile@gmail.com</a></li>
-                    <li><a href="#">+47 123 45 678</a></li>
-                </ul>
-            </section>
-            <div class="break"></div>
-            <ul class="socials">
-                <li><a href="#"><img src="img/Help.png" alt="Help icon"></a></li>
-                <li>
-                    <a href="#"><img src="img/Facebook.png" alt="Facebook icon"></a>
-                    <a href="#"><img src="img/Instagram.png" alt="Instagram icon"></a>
-                </li>
-                <li><a href="#"><i class="fa-solid fa-arrow-up-long"></i></a></li>
-            </ul>
+            </div>
         </footer>
     </div>
 </body>
